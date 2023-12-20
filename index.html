@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Unit Converter</title>
+</head>
+<body>
+  <div id="unitConverter">
+    <h2>Unit Converter</h2>
+
+    <div id="buttons">
+      <button class="btn" onclick="setConversionType('length')">Length</button>
+      <button class="btn" onclick="setConversionType('temp')">Temp</button>
+      <button class="btn" onclick="setConversionType('area')">Area</button>
+      <button class="btn" onclick="setConversionType('volume')">Volume</button>
+      <button class="btn" onclick="setConversionType('weight')">Weight</button>
+      <button class="btn" onclick="setConversionType('time')">Time</button>
+    </div>
+
+    <div id="inputSection">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <label for="fromUnit">From:</label>
+      <select id="fromUnit"></select>
+
+      <label for="toUnit">To:</label>
+      <select id="toUnit"></select>
+    </div>
+
+    <button class="btn" onclick="convert()">Convert</button>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
